@@ -14,24 +14,31 @@ export default function Testimonial() {
     scrollRef.current.scrollBy({ left: 600, behavior: "smooth" });
   };
 
-  // Auto-scroll on mobile
+  // Continuous auto-scroll
   useEffect(() => {
+    const container = scrollRef.current;
     const isMobile = window.innerWidth < 768;
-    if (!isMobile) return; // Only run on mobile
+    if (!isMobile) return; // only for mobile
 
-    const interval = setInterval(() => {
-      if (!scrollRef.current) return;
-      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+    let scrollAmount = 0.5; // speed in px per frame
+    let animationFrame;
 
-      // If near end, go back to start
-      if (scrollLeft + clientWidth >= scrollWidth - 10) {
-        scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
-      } else {
-        scrollRef.current.scrollBy({ left: 320, behavior: "smooth" }); // Faster step
+    const smoothScroll = () => {
+      if (!container) return;
+
+      container.scrollLeft += scrollAmount;
+
+      // Loop back when reaching end
+      if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+        container.scrollLeft = 0;
       }
-    }, 2000); // Speed: every 2s
 
-    return () => clearInterval(interval);
+      animationFrame = requestAnimationFrame(smoothScroll);
+    };
+
+    animationFrame = requestAnimationFrame(smoothScroll);
+
+    return () => cancelAnimationFrame(animationFrame);
   }, []);
 
   return (
@@ -58,10 +65,14 @@ export default function Testimonial() {
       {/* Scrollable Testimonials */}
       <div
         ref={scrollRef}
-        className="flex space-x-6 py-9 overflow-x-auto px-6 w-full max-w-6xl scrollbar-hide scroll-smooth snap-x snap-mandatory"
+        className="flex space-x-6 py-9 overflow-x-auto px-6 w-full max-w-6xl scrollbar-hide snap-x snap-mandatory"
+        style={{ scrollBehavior: "smooth" }}
       >
         {testimonials.map((item, index) => (
-          <div key={index} className="snap-start flex-shrink-0 w-80">
+          <div
+            key={index}
+            className="snap-start flex-shrink-0 w-80 h-64" // fixed same size for all cards
+          >
             <TestimonialCard
               name={item.name}
               role={item.role}
