@@ -7,11 +7,11 @@ export default function Testimonial() {
     const scrollRef = useRef(null);
 
     const scrollLeft = () => {
-        scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+        scrollRef.current.scrollBy({ left: -600, behavior: "smooth" });
     };
 
     const scrollRight = () => {
-        scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+        scrollRef.current.scrollBy({ left: 600, behavior: "smooth" });
     };
 
     return (
