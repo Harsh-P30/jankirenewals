@@ -1,7 +1,7 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import TestimonialCard from "./Cards/TestimonialCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { testimonials } from '../data/testimonial';
+import { testimonials } from "../data/testimonial";
 
 export default function Testimonial() {
   const scrollRef = useRef(null);
@@ -13,6 +13,26 @@ export default function Testimonial() {
   const scrollRight = () => {
     scrollRef.current.scrollBy({ left: 600, behavior: "smooth" });
   };
+
+  // Auto-scroll on mobile
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    if (!isMobile) return; // Only run on mobile
+
+    const interval = setInterval(() => {
+      if (!scrollRef.current) return;
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+
+      // If near end, go back to start
+      if (scrollLeft + clientWidth >= scrollWidth - 10) {
+        scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        scrollRef.current.scrollBy({ left: 320, behavior: "smooth" }); // Faster step
+      }
+    }, 2000); // Speed: every 2s
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="flex flex-col justify-center items-center py-16 pb-26 bg-white relative w-full">
