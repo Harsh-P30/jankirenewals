@@ -1,6 +1,6 @@
 export const products = [
   {
-    image: "src/assets/Product/bos-g-pro.png",
+    image: "Product/bos-g-pro.png",
     title: "High Voltage LFP Lithium Batteries",
     description: "Advanced high-voltage lithium storage for residential and C&I applications.",
     longdescription:
@@ -8,7 +8,7 @@ export const products = [
   },
 
   {
-    image: "src/assets/Product/Low-Voltage-Lithium-Batteries.png",
+    image: "Product/Low-Voltage-Lithium-Batteries.png",
     title: "Low Voltage LFP Lithium Batteries",
     description: "Reliable low-voltage storage with modular expansion options.",
     longdescription:
@@ -17,7 +17,7 @@ export const products = [
 
 
   {
-    image: "src/assets/Product/CI-inverters.webp",
+    image: "Product/CI-inverters.webp",
     title: "3 Phase Residential String Inverters",
     description: "Reliable 3-phase inverters for residential and small business setups.",
     longdescription:
@@ -25,7 +25,7 @@ export const products = [
   },
 
   {
-    image: "src/assets/Product/three-phase-HV-hybrid.webp",
+    image: "Product/three-phase-HV-hybrid.webp",
     title: "3 Phase High Voltage Hybrid Inverters",
     description: "Versatile hybrid inverters with high-voltage battery support.",
     longdescription:
@@ -33,21 +33,21 @@ export const products = [
   },
 
   {
-    image: "src/assets/Product/CI-ESS-Solution1.webp",
+    image: "Product/CI-ESS-Solution1.webp",
     title: "C&I Lithium ESS Systems",
     description: "Scalable energy storage for commercial and industrial needs.",
     longdescription:
       "Commercial & Industrial (C&I) Lithium Energy Storage Systems are built for demanding power applications in factories, warehouses, and offices. These systems combine high-capacity LiFePO₄ battery racks, PCS (Power Conversion Systems), and advanced EMS for intelligent energy control. Their modular design allows scalability from hundreds of kWh to multi-MWh capacities. Key features include peak shaving to reduce demand charges, power backup for critical operations, and PV firming to smooth out solar energy fluctuations. Integrated monitoring and predictive maintenance ensure maximum uptime and performance over 10+ years of operation."
   },
   {
-    image: "src/assets/Product/single-phase-ongrid.webp",
+    image: "Product/single-phase-ongrid.webp",
     title: "1 Phase String Inverters",
     description: "Efficient single-phase on-grid inverters for residential systems.",
     longdescription:
       "1 Phase String Inverters are engineered for residential rooftop solar systems, offering power ratings between 1.5–6 kW. With single or dual Maximum Power Point Trackers (MPPT), they can handle multiple panel orientations efficiently. These inverters feature advanced grid-tie functionality, anti-islanding protection, and real-time monitoring via Wi-Fi or RS485. Built with high-grade components, they achieve efficiency levels of 97.5% or higher. Their compact size, lightweight design, and quick plug-and-play installation make them ideal for homeowners looking to maximize solar energy yield while keeping maintenance hassle-free."
   },
   {
-    image: "src/assets/Product/4-1-scaled.webp",
+    image: "Product/4-1-scaled.webp",
     title: "Micro Hybrid Inverter",
     description: "Compact inverter with storage and module-level optimization.",
     longdescription:
@@ -56,7 +56,7 @@ export const products = [
 
 
   {
-    image: "src/assets/Product/MS-LC430-BC-2侧面-1.jpg",
+    image: "Product/MS-LC430-BC-2侧面-1.jpg",
     title: "MW Scale BESS",
     description: "Utility-grade containerized energy storage solutions.",
     longdescription:
@@ -64,7 +64,7 @@ export const products = [
   },
 
   {
-    image: "src/assets/Product/RW-F5.3-1H3-image.jpg",
+    image: "Product/RW-F5.3-1H3-image.jpg",
     title: "Residential Lithium ESS Systems",
     description: "Compact residential storage for backup and self-consumption.",
     longdescription:
@@ -72,7 +72,7 @@ export const products = [
   },
 
   {
-    image: "src/assets/Product/single-phase-LV-hybrid.webp",
+    image: "Product/single-phase-LV-hybrid.webp",
     title: "1 Phase Low Voltage Hybrid Inverters",
     description: "Low-voltage hybrid inverter for flexible residential energy use.",
     longdescription:
@@ -80,7 +80,7 @@ export const products = [
   },
 
   {
-    image: "src/assets/Product/Three-phase-ongrid.webp",
+    image: "Product/Three-phase-ongrid.webp",
     title: "3 Phase (C&I) String Inverters",
     description: "High-efficiency 3-phase inverters for C&I projects.",
     longdescription:
@@ -88,7 +88,7 @@ export const products = [
   },
 
   {
-    image: "src/assets/Product/three-phase-LV-hybrid.png",
+    image: "Product/three-phase-LV-hybrid.png",
     title: "3 Phase Low Voltage Hybrid Inverters",
     description: "Low-voltage hybrid inverters for larger residential or small C&I setups.",
     longdescription:
