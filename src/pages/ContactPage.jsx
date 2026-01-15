@@ -18,7 +18,7 @@ function ContactPage() {
   // Submit to WhatsApp
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phoneNumber = "917428498692"; // Replace with your WhatsApp number (without +)
+    const phoneNumber = "919990233861"; // Replace with your WhatsApp number (without +)
     const text = `
 *Contact Us Form Submission*
 First Name: ${formData.firstName}

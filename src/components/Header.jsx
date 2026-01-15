@@ -25,7 +25,7 @@ function Header() {
         {/* Contact (Desktop Only) */}
         <div className="hidden md:flex flex-col text-right">
           <p className="flex items-center gap-2 text-blue-800 font-bold text-lg"><IoCall />Enquiry</p>
-          <p className="text-sm">+91 6546542154</p>
+          <p className="text-sm">+91 9990233861</p>
         </div>
 
         {/* Mobile Menu Toggle Button */}
@@ -47,7 +47,7 @@ function Header() {
 
           <div className="pt-4 border-t mt-2">
             <p className="flex items-center justify-center gap-2 text-blue-800 font-bold text-base"><IoCall /> Enquiry</p>
-            <p className="text-sm">+91 6546542154</p>
+            <p className="text-sm">+91 9990233861</p>
           </div>
         </div>
       )}
