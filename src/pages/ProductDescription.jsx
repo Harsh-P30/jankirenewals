@@ -28,7 +28,7 @@ function ProductDescription() {
 
                     <button
                         onClick={() => {
-                            const phone = "919199783011"; // Your WhatsApp number
+                            const phone = "919990233861"; // Your WhatsApp number
                             const message = `Hello, I am interested in the product: " ${title} "`;
                             const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
                             window.open(url, "_blank");
